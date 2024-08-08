@@ -1,0 +1,117 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	.	#	#	#	#	#	#	#	
+5	+	.	.	.	.	.	.	#	#	#	
+6	#	#	#	.	#	#	.	#	#	#	
+7	#	#	#	.	#	#	.	#	#	#	
+8	#	#	#	#	#	#	.	#	#	#	
+9	#	#	#	#	#	>	.	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnLeft
+		}
+	}
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	RepeatUntil(goal){
+		moveForward
+		turnLeft
+		moveForward
+		turnLeft
+		moveForward
+	}
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	.	#	#	#	#	#	#	
+2	.	.	.	.	#	#	#	#	#	#	
+3	.	#	#	.	#	#	#	#	#	#	
+4	^	#	#	.	#	#	#	#	#	#	
+5	#	#	#	.	#	#	#	#	#	#	
+6	.	.	.	.	#	#	#	#	#	#	
+7	#	#	#	.	#	#	#	#	#	#	
+8	#	#	#	+	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnRight
+		}
+	}
+}
+
+--- Target Task 1: Student attempt ---
+In the reference task, the student attempted to solve the maze challenge with the following code:
+
+```python
+def Run():
+	RepeatUntil(goal){
+		moveForward
+		turnLeft
+		moveForward
+		turnLeft
+		moveForward
+	}
+}
+```
+
+Let's analyze the student's behavior and misconceptions in this attempt code:
+
+1. **Limited Actions**: The student's code repeats a pattern of `moveForward` followed by `turnLeft`. This pattern is executed repeatedly within the `RepeatUntil(goal)` loop. The student doesn't make use of the `pathAhead` condition to make decisions based on the presence of walls or open paths.
+
+2. **Inefficient Movement**: The code exhibits an inefficient movement strategy. By continuously turning left and moving forward, the avatar will not make progress toward the goal efficiently. It will end up moving in circles or zigzagging without a clear path to the goal.
+
+3. **Lack of Goal Recognition**: The student's code does not include any logic to recognize when the avatar has reached the goal. In the `RepeatUntil(goal)` loop, the condition `goal` is not checked, so the code will keep executing the same pattern without stopping when the goal is reached.
+
+Now, let's create an attempt code for the new target task, trying to capture the same student's behavior and misconceptions:
+
+```python
+def Run():
+	RepeatUntil(goal){
+		moveForward
+		turnLeft
+		moveForward
+	}
+}
+```
+
+In this attempt code for the new target task, we can see that the student is likely to repeat a similar pattern as in the reference task. They continue to use the `moveForward` and `turnLeft` commands without checking the surroundings or considering the goal. This code will likely result in the avatar moving in circles or getting stuck, just like in the reference task's attempt.

@@ -1,0 +1,1124 @@
+{
+    "task_3": {
+        "student_1": {
+            "method_1": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_4": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_5": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_6": {
+                "stu_behavior":0,
+                "task_characteristic":0
+            },
+            "method_7": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":0
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_13": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_15": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            }
+        },
+        "student_2": {
+            "method_1": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_4": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_5": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_6": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":0
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":0.5,
+                "task_characteristic":1
+            },
+            "method_13": {
+                "stu_behavior":0.5,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            }
+        },
+        "student_3": {
+            "method_1": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_2": {
+                "stu_behavior":0,
+                "task_characteristic":0
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_4": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_5": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_6": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_7": {
+                "stu_behavior":0.5,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":0
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_12": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_13": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_14": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            }
+        },
+        "student_4": {
+            "method_1": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":0.5,
+                "task_characteristic":1
+            },
+            "method_4": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_5": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_6": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":0,
+                "task_characteristic":0
+            },
+            "method_13": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_14": {
+                "stu_behavior":0,
+                "task_characteristic":0
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            }
+        },
+        "student_5": {
+            "method_1": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_4": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_5": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_6": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_9": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":0
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_13": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            }
+        },
+        "student_6": {
+            "method_1": {
+                "stu_behavior":0.5,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_4": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_5": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_6": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_13": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            }
+        }
+    },
+    "task_1": {
+        "student_1": {
+            "method_1": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_4": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_5": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_6": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_10": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_13": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_15": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            }
+        },
+        "student_2": {
+            "method_1": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_4": {
+                "stu_behavior":0.5,
+                "task_characteristic":1
+            },
+            "method_5": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_6": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_13": {
+                "stu_behavior":0.5,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_15": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            }
+        },
+        "student_3": {
+            "method_1": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_4": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_5": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_6": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_10": {
+                "stu_behavior":0.5,
+                "task_characteristic":0
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_12": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_13": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":0.5,
+                "task_characteristic":0
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            }
+        },
+        "student_4": {
+            "method_1": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_4": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_5": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_6": {
+                "stu_behavior":0,
+                "task_characteristic":0
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_9": {
+                "stu_behavior":0.5,
+                "task_characteristic":0
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":0
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_13": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_15": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            }
+        },
+        "student_5": {
+            "method_1": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_4": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_5": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_6": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_9": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_11": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_12": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_13": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            }
+        },
+        "student_6": {
+            "method_1": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_4": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_5": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_6": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_13": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            }
+        }
+    },
+    "task_4": {
+        "student_1": {
+            "method_1": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_4": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_5": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_6": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_10": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_13": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_15": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            }
+        },
+        "student_2": {
+            "method_1": {
+                "stu_behavior":0.5,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_4": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_5": {
+                "stu_behavior":0,
+                "task_characteristic":0
+            },
+            "method_6": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_7": {
+                "stu_behavior":0.5,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_13": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            }
+        },
+        "student_3": {
+            "method_1": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_4": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_5": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_6": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_12": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_13": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            }
+        },
+        "student_4": {
+            "method_1": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_4": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_5": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_6": {
+                "stu_behavior":0.5,
+                "task_characteristic":0
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":0
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":0
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_13": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":0,
+                "task_characteristic":0.5
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            }
+        },
+        "student_5": {
+            "method_1": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_4": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_5": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_6": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":0.5,
+                "task_characteristic":0.5
+            },
+            "method_13": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            }
+        },
+        "student_6": {
+            "method_1": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_2": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_3": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_4": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_5": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_6": {
+                "stu_behavior":1,
+                "task_characteristic":0.5
+            },
+            "method_7": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_8": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_9": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_10": {
+                "stu_behavior":0,
+                "task_characteristic":1
+            },
+            "method_11": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_12": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_13": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_14": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            },
+            "method_15": {
+                "stu_behavior":1,
+                "task_characteristic":1
+            }
+        }
+    }
+}

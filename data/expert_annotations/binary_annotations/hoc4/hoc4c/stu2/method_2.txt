@@ -1,0 +1,86 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	v	#	#	#	#	#	#	
+6	#	#	#	.	.	#	#	#	#	#	
+7	#	#	#	#	+	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+Based on the student's behavior in the reference task attempt, it seems the student understands the concept of the basic navigation blocks of moving forward and turning. However, the student appears to have a misunderstanding about the structure and logic of the grid or the full sequence of steps that need to be executed to reach the goal.
+
+In the reference task, the student stopped early and did not complete the step of turning right and moving forward. Therefore, he did not reach the goal cell (+). This could be a sign of lack of understanding how the functions are lined up to navigate the avatar or the need to execute additional steps after turning.
+
+Assuming the student carries the same misconceptions, in the given target task, the student is likely to repeat the same pattern of steps. This is because the correct solution to the target task involves exactly the same sequence of moves as the solution to the reference task. A consistency in their errors suggests the student's misunderstanding is systematic.
+
+Therefore, the student might attempt the following code for the target task:
+
+--- Target Task 1: Student attempt ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+}  

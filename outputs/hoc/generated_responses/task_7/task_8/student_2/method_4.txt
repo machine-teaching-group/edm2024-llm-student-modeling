@@ -1,0 +1,122 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	.	#	#	#	#	#	#	#	
+5	+	.	.	.	.	.	.	#	#	#	
+6	#	#	#	.	#	#	.	#	#	#	
+7	#	#	#	.	#	#	.	#	#	#	
+8	#	#	#	#	#	#	.	#	#	#	
+9	#	#	#	#	#	>	.	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnLeft
+		}
+	}
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnRight
+		}
+	}
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	.	#	#	#	#	#	#	
+2	.	.	.	.	#	#	#	#	#	#	
+3	.	#	#	.	#	#	#	#	#	#	
+4	^	#	#	.	#	#	#	#	#	#	
+5	#	#	#	.	#	#	#	#	#	#	
+6	.	.	.	.	#	#	#	#	#	#	
+7	#	#	#	.	#	#	#	#	#	#	
+8	#	#	#	+	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnRight
+		}
+	}
+}
+
+--- Target Task 1: Student attempt ---
+In the reference task, the student's attempt code is as follows:
+
+```python
+def Run(){
+    RepeatUntil(goal){
+        If(pathAhead){
+            moveForward
+        }
+        Else{
+            turnRight
+        }
+    }
+}
+```
+
+Now, let's analyze the student's behavior and misconceptions in this attempt code:
+
+1. **Misconception in the If-Else Block**: The primary misconception here is in the `Else` block of the `If` statement. The student is making the AVATAR turn right when it encounters an obstacle (`pathAhead` is `False`). This is incorrect because the solution code turns the AVATAR left (`turnLeft`) when it encounters an obstacle. The correct behavior should be to turn left in order to continue searching for a path to the goal.
+
+2. **Lack of Goal Check**: The student correctly uses a `RepeatUntil` loop to keep repeating until the `goal` condition is met. However, they are missing a condition to check if they have reached the goal (`+`). In the reference solution, the `goal` condition is checked within the loop to determine when to stop. In the student's attempt, the goal condition is not considered.
+
+3. **Directional Awareness**: The student's code does not take into account the direction the AVATAR is facing. In the reference solution, the AVATAR's direction is considered when deciding to turn left or right. The student's attempt does not consider this, which may lead to incorrect navigation decisions.
+
+Now, for the target task, we will synthesize an attempt code that captures the student's behavior and misconceptions:
+
+```python
+def Run(){
+    RepeatUntil(goal){
+        If(pathAhead){
+            moveForward
+        }
+        Else{
+            turnLeft
+        }
+    }
+}
+```
+
+In this attempt code for the target task, the student continues with the same misconception of turning left when encountering an obstacle, just as they did in the reference task. They still lack a condition to check for the goal, and they do not consider the AVATAR's direction. This attempt reflects the same misconceptions as seen in the reference task's student attempt.

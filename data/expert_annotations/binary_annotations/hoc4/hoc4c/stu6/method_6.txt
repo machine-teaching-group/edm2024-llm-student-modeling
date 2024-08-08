@@ -1,0 +1,121 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	moveForward
+	turnLeft
+	turnRight
+	turnRight
+	turnLeft
+	moveForward
+	turnLeft
+	turnRight
+	turnRight
+	turnLeft
+	turnLeft
+	moveForward
+	turnLeft
+	turnRight
+	turnRight
+	turnRight
+	turnRight
+	turnRight
+	turnRight
+	moveForward
+	turnRight
+	moveForward
+	turnRight
+	turnLeft
+	turnLeft
+	moveForward
+	turnLeft
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	v	#	#	#	#	#	#	
+6	#	#	#	.	.	#	#	#	#	#	
+7	#	#	#	#	+	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+Sure, I'd be happy to help you with this!
+From the reference task and the student's attempt code, it seems that the student has a good understanding of the basic navigation blocks (moveForward, turnLeft, turnRight) and the Boolean conditions (pathAhead, pathLeft, pathRight, goal). However, there are some misconceptions and errors in the student's attempt code:
+
+The student is using the moveForward block multiple times without proper conditioning. For example, in line 10 of the student's attempt code, the avatar moves forward even though there is no path ahead. This can be fixed by using the moveForward block only when there is a path ahead.
+The student is turning left and right without proper conditioning. For example, in line 5 of the student's attempt code, the avatar turns left even though there is no path left. This can be fixed by using the turnLeft block only when there is a path left.
+The student is not using the goal condition correctly. In line 9 of the student's attempt code, the avatar turns right without checking if there is a goal. This can be fixed by using the goal condition to check if there is a goal before turning right.
+The student is not using the repeat until loop correctly. In line 7 of the student's attempt code, the avatar moves forward without checking if there is a path ahead. This can be fixed by using the repeat until loop to check if there is a path ahead before moving forward.
+Now, onto the new target task you provided:
+The student's attempt code for the new target task is likely to be similar to their attempt code for the reference task, with the same misconceptions and errors. Here's an attempt code that captures the student's behavior and misconceptions:
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	turnRight
+	turnLeft
+	moveForward
+}
+
+The student is likely to use the moveForward block multiple times without proper conditioning, and not use the goal condition correctly. They may also turn left and right without proper conditioning, and not use the repeat until loop correctly.
+
+I hope this helps! Let me know if you have any questions or need further clarification

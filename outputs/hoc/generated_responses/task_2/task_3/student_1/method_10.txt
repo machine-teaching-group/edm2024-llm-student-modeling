@@ -1,0 +1,98 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	>	#	#	+	#	#	#	#	
+6	#	#	.	.	.	.	#	#	#	#	
+7	#	#	#	#	#	.	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	turnRight
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+	moveForward
+	turnLeft
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+Sure, I'd be happy to help you analyze the student's attempt code for the reference task and predict how they might approach the new target task.
+For the reference task, the student's attempt code is:
+def Run(){
+moveForward
+turnLeft
+moveForward
+}
+This code is missing several important steps that are necessary to solve the task. Here are some of the misconceptions and mistakes in the student's code:
+
+The student does not use the pathAhead block to check if there is a path ahead before moving forward. Instead, they simply move forward without checking for obstacles.
+The student turns left after moving forward, without checking if there is a path left. They should use the pathLeft block to check if there is a path left before turning.
+The student moves forward again after turning left, without checking if there is a path ahead. They should use the pathAhead block to check if there is a path ahead before moving forward.
+The student does not use the goal block to check if they have reached the goal cell. Instead, they simply move forward until they reach the end of the grid.
+Based on these mistakes, it is likely that the student will make similar errors in the new target task. Here is a likely attempt code for the new task:
+def Run(){
+moveForward
+turnRight
+moveForward
+turnLeft
+moveForward
+}
+This code will likely encounter similar problems as the reference task, such as not checking for obstacles before moving forward and not using the goal block to check if the goal has been reached.
+To improve the student's understanding and performance, it may be helpful to provide additional guidance and practice exercises that focus on the use of pathAhead and goal blocks, as well as the importance of checking for obstacles before moving. Additionally, it may be helpful to provide more challenging tasks that require the student to use a combination of different blocks and strategies to solve.

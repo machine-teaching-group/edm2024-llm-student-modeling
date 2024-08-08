@@ -1,0 +1,108 @@
+chatGPT-GPT-3.5 GPT-4
+Chi2ContingencyResult(statistic=13.597979797979797, pvalue=0.003506728292113554, dof=3, expected_freq=array([[18. ,  2.5,  4.5, 11. ],
+       [18. ,  2.5,  4.5, 11. ]]))
+chatGPT-GPT-3.5 llama-2-7b-chat
+Chi2ContingencyResult(statistic=7.425108225108225, pvalue=0.05951429059139547, dof=3, expected_freq=array([[27.5,  2. ,  3.5,  3. ],
+       [27.5,  2. ,  3.5,  3. ]]))
+chatGPT-GPT-3.5 llama-2-70b-chat
+Chi2ContingencyResult(statistic=1.6753246753246753, pvalue=0.6424335466070163, dof=3, expected_freq=array([[21. ,  3.5,  6. ,  5.5],
+       [21. ,  3.5,  6. ,  5.5]]))
+chatGPT-GPT-3.5 neurSS
+Chi2ContingencyResult(statistic=3.0038961038961043, pvalue=0.39102486366953937, dof=3, expected_freq=array([[20. ,  3.5,  7. ,  5.5],
+       [20. ,  3.5,  7. ,  5.5]]))
+chatGPT-GPT-3.5 GPT-3.5ft-SS
+Chi2ContingencyResult(statistic=24.89408866995074, pvalue=1.6248154962417506e-05, dof=3, expected_freq=array([[14.5,  3.5,  4. , 14. ],
+       [14.5,  3.5,  4. , 14. ]]))
+chatGPT-GPT-3.5 Llama2-7Bft-SS
+Chi2ContingencyResult(statistic=5.058643111274689, pvalue=0.1675530284756653, dof=3, expected_freq=array([[19.5       ,  3.16666667,  6.        ,  7.33333333],
+       [19.5       ,  3.16666667,  6.        ,  7.33333333]]))
+chatGPT-GPT-3.5 Llama2-70Bft-SS
+Chi2ContingencyResult(statistic=17.649505666747046, pvalue=0.0005194653033368767, dof=3, expected_freq=array([[14.66666667,  4.33333333,  7.33333333,  9.66666667],
+       [14.66666667,  4.33333333,  7.33333333,  9.66666667]]))
+chatGPT-GPT-3.5 TutorSS
+Chi2ContingencyResult(statistic=35.70245836637589, pvalue=8.655434081245898e-08, dof=3, expected_freq=array([[13.        ,  2.5       ,  4.33333333, 16.16666667],
+       [13.        ,  2.5       ,  4.33333333, 16.16666667]]))
+GPT-4 llama-2-7b-chat
+Chi2ContingencyResult(statistic=22.488888888888887, pvalue=5.160435957404178e-05, dof=3, expected_freq=array([[22.5,  0.5,  3. , 10. ],
+       [22.5,  0.5,  3. , 10. ]]))
+GPT-4 llama-2-70b-chat
+Chi2ContingencyResult(statistic=7.783181818181818, pvalue=0.0507117959005643, dof=3, expected_freq=array([[16. ,  2. ,  5.5, 12.5],
+       [16. ,  2. ,  5.5, 12.5]]))
+GPT-4 neurSS
+Chi2ContingencyResult(statistic=8.296410256410256, pvalue=0.04026699885045513, dof=3, expected_freq=array([[15. ,  2. ,  6.5, 12.5],
+       [15. ,  2. ,  6.5, 12.5]]))
+GPT-4 GPT-3.5ft-SS
+Chi2ContingencyResult(statistic=4.578947368421053, pvalue=0.20535553919765923, dof=3, expected_freq=array([[ 9.5,  2. ,  3.5, 21. ],
+       [ 9.5,  2. ,  3.5, 21. ]]))
+GPT-4 Llama2-7Bft-SS
+Chi2ContingencyResult(statistic=3.5378289713494206, pvalue=0.315888871223469, dof=3, expected_freq=array([[14.5       ,  1.66666667,  5.5       , 14.33333333],
+       [14.5       ,  1.66666667,  5.5       , 14.33333333]]))
+GPT-4 Llama2-70Bft-SS
+Chi2ContingencyResult(statistic=7.234326423588779, pvalue=0.06479241212261716, dof=3, expected_freq=array([[ 9.66666667,  2.83333333,  6.83333333, 16.66666667],
+       [ 9.66666667,  2.83333333,  6.83333333, 16.66666667]]))
+GPT-4 TutorSS
+Chi2ContingencyResult(statistic=8.569049108539255, pvalue=0.035604812127402956, dof=3, expected_freq=array([[ 8.        ,  1.        ,  3.83333333, 23.16666667],
+       [ 8.        ,  1.        ,  3.83333333, 23.16666667]]))
+llama-2-7b-chat llama-2-70b-chat
+Chi2ContingencyResult(statistic=11.869281045751634, pvalue=0.007844629836418184, dof=3, expected_freq=array([[25.5,  1.5,  4.5,  4.5],
+       [25.5,  1.5,  4.5,  4.5]]))
+llama-2-7b-chat neurSS
+Chi2ContingencyResult(statistic=14.82415996701711, pvalue=0.001973252079432689, dof=3, expected_freq=array([[24.5,  1.5,  5.5,  4.5],
+       [24.5,  1.5,  5.5,  4.5]]))
+llama-2-7b-chat GPT-3.5ft-SS
+Chi2ContingencyResult(statistic=39.60485829959514, pvalue=1.2921300832215682e-08, dof=3, expected_freq=array([[19. ,  1.5,  2.5, 13. ],
+       [19. ,  1.5,  2.5, 13. ]]))
+llama-2-7b-chat Llama2-7Bft-SS
+Chi2ContingencyResult(statistic=16.37426900584795, pvalue=0.000950228872386762, dof=3, expected_freq=array([[24.        ,  1.16666667,  4.5       ,  6.33333333],
+       [24.        ,  1.16666667,  4.5       ,  6.33333333]]))
+llama-2-7b-chat Llama2-70Bft-SS
+Chi2ContingencyResult(statistic=37.14667940754897, pvalue=4.2840369781797765e-08, dof=3, expected_freq=array([[19.16666667,  2.33333333,  5.83333333,  8.66666667],
+       [19.16666667,  2.33333333,  5.83333333,  8.66666667]]))
+llama-2-7b-chat TutorSS
+Chi2ContingencyResult(statistic=48.37957336780866, pvalue=1.7680474948004167e-10, dof=3, expected_freq=array([[17.5       ,  0.5       ,  2.83333333, 15.16666667],
+       [17.5       ,  0.5       ,  2.83333333, 15.16666667]]))
+llama-2-70b-chat neurSS
+Chi2ContingencyResult(statistic=0.3611111111111111, pvalue=0.9481534996715555, dof=3, expected_freq=array([[18.,  3.,  8.,  7.],
+       [18.,  3.,  8.,  7.]]))
+llama-2-70b-chat GPT-3.5ft-SS
+Chi2ContingencyResult(statistic=17.682580645161288, pvalue=0.0005113771174903826, dof=3, expected_freq=array([[12.5,  3. ,  5. , 15.5],
+       [12.5,  3. ,  5. , 15.5]]))
+llama-2-70b-chat Llama2-7Bft-SS
+Chi2ContingencyResult(statistic=1.1014824797843663, pvalue=0.7767162191914835, dof=3, expected_freq=array([[17.5       ,  2.66666667,  7.        ,  8.83333333],
+       [17.5       ,  2.66666667,  7.        ,  8.83333333]]))
+llama-2-70b-chat Llama2-70Bft-SS
+Chi2ContingencyResult(statistic=10.231771576898119, pvalue=0.016695332347317828, dof=3, expected_freq=array([[12.66666667,  3.83333333,  8.33333333, 11.16666667],
+       [12.66666667,  3.83333333,  8.33333333, 11.16666667]]))
+llama-2-70b-chat TutorSS
+Chi2ContingencyResult(statistic=26.55853344768439, pvalue=7.285260440438168e-06, dof=3, expected_freq=array([[11.        ,  2.        ,  5.33333333, 17.66666667],
+       [11.        ,  2.        ,  5.33333333, 17.66666667]]))
+neurSS GPT-3.5ft-SS
+Chi2ContingencyResult(statistic=17.583450210378682, pvalue=0.0005360011394826664, dof=3, expected_freq=array([[11.5,  3. ,  6. , 15.5],
+       [11.5,  3. ,  6. , 15.5]]))
+neurSS Llama2-7Bft-SS
+Chi2ContingencyResult(statistic=1.1246426529445395, pvalue=0.7711288251690486, dof=3, expected_freq=array([[16.5       ,  2.66666667,  8.        ,  8.83333333],
+       [16.5       ,  2.66666667,  8.        ,  8.83333333]]))
+neurSS Llama2-70Bft-SS
+Chi2ContingencyResult(statistic=8.37177157689812, pvalue=0.038921813928065416, dof=3, expected_freq=array([[11.66666667,  3.83333333,  9.33333333, 11.16666667],
+       [11.66666667,  3.83333333,  9.33333333, 11.16666667]]))
+neurSS TutorSS
+Chi2ContingencyResult(statistic=25.92611717974181, pvalue=9.883225005216035e-06, dof=3, expected_freq=array([[10.        ,  2.        ,  6.33333333, 17.66666667],
+       [10.        ,  2.        ,  6.33333333, 17.66666667]]))
+GPT-3.5ft-SS Llama2-7Bft-SS
+Chi2ContingencyResult(statistic=11.356993006993008, pvalue=0.009944110438163982, dof=3, expected_freq=array([[11.        ,  2.66666667,  5.        , 17.33333333],
+       [11.        ,  2.66666667,  5.        , 17.33333333]]))
+GPT-3.5ft-SS Llama2-70Bft-SS
+Chi2ContingencyResult(statistic=5.7897042991872905, pvalue=0.12230206513600235, dof=3, expected_freq=array([[ 6.16666667,  3.83333333,  6.33333333, 19.66666667],
+       [ 6.16666667,  3.83333333,  6.33333333, 19.66666667]]))
+GPT-3.5ft-SS TutorSS
+Chi2ContingencyResult(statistic=2.425477707006369, pvalue=0.48890957741317076, dof=3, expected_freq=array([[ 4.5       ,  2.        ,  3.33333333, 26.16666667],
+       [ 4.5       ,  2.        ,  3.33333333, 26.16666667]]))
+Llama2-7Bft-SS Llama2-70Bft-SS
+Chi2ContingencyResult(statistic=6.226130884041333, pvalue=0.10111205489523356, dof=3, expected_freq=array([[11.16666667,  3.5       ,  8.33333333, 13.        ],
+       [11.16666667,  3.5       ,  8.33333333, 13.        ]]))
+Llama2-7Bft-SS TutorSS
+Chi2ContingencyResult(statistic=18.472585844954267, pvalue=0.000351379967266135, dof=3, expected_freq=array([[ 9.5       ,  1.66666667,  5.33333333, 19.5       ],
+       [ 9.5       ,  1.66666667,  5.33333333, 19.5       ]]))
+Llama2-70Bft-SS TutorSS
+Chi2ContingencyResult(statistic=10.13325421771762, pvalue=0.01746673404382851, dof=3, expected_freq=array([[ 4.66666667,  2.83333333,  6.66666667, 21.83333333],
+       [ 4.66666667,  2.83333333,  6.66666667, 21.83333333]]))

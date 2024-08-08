@@ -1,0 +1,120 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	turnRight
+	moveForward
+	turnLeft
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	#	#	#	#	#	#	
+6	#	#	v	#	#	#	#	#	#	#	
+7	+	#	.	#	#	#	#	#	#	#	
+8	.	.	.	#	#	#	#	#	#	#	
+9	.	#	.	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	moveForward
+	turnRight
+	moveForward
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+In the reference task, we can observe the following:
+
+**Reference Task 1: Student attempt**
+```
+def Run(){
+	moveForward
+	turnRight
+	moveForward
+	turnLeft
+	moveForward
+}
+```
+
+**Explanation of the Student's Behavior and Misconceptions in the Attempt Code:**
+
+1. **Correct Movement**: The student starts with a correct move by using the `moveForward` block to move the avatar one step to the east.
+
+2. **Incorrect Turning Sequence**: The main misconception in the student's code is related to the turning sequence. After the initial move, the student uses `turnRight` and `moveForward`. This sequence is incorrect because it causes the avatar to move south instead of east. The correct sequence should be to use `turnLeft` first, then `moveForward`, which would make the avatar move east.
+
+3. **Second Turning Sequence**: After the first incorrect turning sequence, the student attempts to correct the direction by using `turnLeft` and then `moveForward`. However, this is still incorrect because it makes the avatar move north instead of east.
+
+4. **Final Move**: The student uses `moveForward` one more time, which makes the avatar move further north instead of east. This move does not contribute to reaching the goal and instead takes the avatar away from the correct path.
+
+In summary, the student's code fails to navigate the avatar correctly because of the incorrect turning sequences, which result in the avatar moving in the wrong direction.
+
+Now, let's move on to the new target task and synthesize an attempt code that captures similar behavior and misconceptions shown in the reference task.
+
+**Target Task 1: Student attempt (Synthesized Attempt Code):**
+
+```
+def Run(){
+	moveForward
+	moveForward
+	turnRight
+	moveForward
+	moveForward
+	turnRight
+	moveForward
+}
+```
+
+**Explanation of the Synthesized Attempt Code:**
+
+In this synthesized attempt code, the student appears to exhibit a similar misconception as in the reference task. They start with two correct `moveForward` blocks, followed by a `turnRight` block, which is also correct. However, just like in the reference task, the student incorrectly uses another `moveForward` after turning right, which will make the avatar move further north instead of east. Finally, they use a second `turnRight` block, which does not correct the direction and does not lead the avatar to the goal. This sequence of actions demonstrates the student's misunderstanding of the correct turning sequence needed to navigate the avatar eastward toward the goal.

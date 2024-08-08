@@ -1,0 +1,107 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	.	#	#	#	#	#	#	#	
+5	+	.	.	.	.	.	.	#	#	#	
+6	#	#	#	.	#	#	.	#	#	#	
+7	#	#	#	.	#	#	.	#	#	#	
+8	#	#	#	#	#	#	.	#	#	#	
+9	#	#	#	#	#	>	.	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnLeft
+		}
+	}
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathLeft){
+			turnLeft
+			moveForward
+		}
+		Else{
+			moveForward
+		}
+	}
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	.	#	#	#	#	#	#	
+4	#	#	#	.	#	#	#	#	#	#	
+5	#	#	#	.	#	#	#	#	#	#	
+6	.	.	.	.	.	.	#	#	#	#	
+7	#	.	#	#	#	.	#	#	#	#	
+8	#	.	#	+	#	.	#	#	#	#	
+9	#	.	.	.	#	^	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathLeft){
+			turnLeft
+			moveForward
+		}
+		Else{
+			moveForward
+		}
+	}
+}
+
+--- Target Task 1: Student attempt ---
+The student attempt for the reference task 1 shows a few misconceptions and misunderstandings.
+
+The student has used the RepeatUntil loop without any condition, which means the loop will run indefinitely.
+The student has used the pathLeft condition to check if the path is clear to the left, but they have not used the pathAhead condition to check if the path is clear ahead. This means that the avatar will move forward even if there is a wall ahead, which will cause it to crash.
+The student has used the turnLeft block inside the RepeatUntil loop, which will cause the avatar to turn left every time it hits a wall, instead of moving forward.
+Based on these misconceptions, it is likely that the student will make similar mistakes in the target task 1. Therefore, a possible attempt code for the target task 1 from the student might look like this:
+
+def Run(){
+	RepeatUntil(goal){
+		If(pathLeft){
+			turnLeft
+			moveForward
+		}
+		Else{
+			moveForward
+		}
+	}
+}
+
+This code has the same issues as the reference task 1 attempt code. The RepeatUntil loop is used without any condition, and the pathLeft condition is used instead of pathAhead to check if the path is clear. Additionally, the turnLeft block is used inside the loop, which will cause the avatar to turn left every time it hits a wall.
+
+It is important to note that the student's attempt code is not a correct solution for the target task 1, and it will not bring the avatar to the goal. To solve the target task 1, the student needs to understand the concept of using pathAhead to check if the path is clear ahead and using turnLeft and turnRight to navigate through the maze.

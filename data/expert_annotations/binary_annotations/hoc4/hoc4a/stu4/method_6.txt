@@ -1,0 +1,100 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	moveForward
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+	moveForward
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	>	#	#	+	#	#	#	#	
+6	#	#	.	.	.	.	#	#	#	#	
+7	#	#	#	#	#	.	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	turnRight
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+	moveForward
+	turnLeft
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+Sure, I'd be happy to help!
+Based on the reference task and the student's attempt code, it seems that the student has a good understanding of the basic navigation blocks (moveForward, turnLeft, turnRight) and the use of conditional blocks (If, Else) to control the flow of the program. However, there are a few misconceptions and areas for improvement that can be noted:
+
+The student's attempt code has unnecessary moves: In line 5, the student moves the avatar to the cell just to the right of the goal, but then immediately moves it back to the previous cell. This is not necessary and can be avoided by simply moving the avatar directly to the goal.
+The student's use of conditional blocks: The student uses conditional blocks to check if the avatar has reached the goal, but the conditions are not necessarily the most efficient way to check for the goal. For example, in line 9, the student checks if the avatar is at the goal by checking the value of the pathAhead block. However, this can be simplified by using a single conditional block that checks if the avatar has reached the goal based on the value of the pathAhead block.
+The student's use of loops: The student uses a RepeatUntil block to repeat the moveForward instruction until the avatar reaches the goal. However, this can be simplified by using a single moveForward instruction followed by a Repeat block that repeats the moveForward instruction until the avatar reaches the goal.
+Based on these observations, here is an attempt code that is likely to be written by the same student:
+def Run(){
+	moveForward
+	turnRight
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+	moveForward
+}
+In this attempt code, the student has simplified the use of conditional blocks and loops, and has avoided unnecessary moves. However, there may still be some areas where the student could improve their understanding of the domain and the language.

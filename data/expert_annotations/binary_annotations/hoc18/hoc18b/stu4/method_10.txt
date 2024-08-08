@@ -1,0 +1,109 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	.	#	#	#	#	#	#	#	
+5	+	.	.	.	.	.	.	#	#	#	
+6	#	#	#	.	#	#	.	#	#	#	
+7	#	#	#	.	#	#	.	#	#	#	
+8	#	#	#	#	#	#	.	#	#	#	
+9	#	#	#	#	#	>	.	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnLeft
+		}
+	}
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	RepeatUntil(goal){
+		moveForward
+		turnLeft
+		moveForward
+		turnLeft
+		moveForward
+	}
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	.	#	#	.	#	#	#	
+5	#	#	#	.	.	.	.	+	#	#	
+6	#	#	#	.	#	#	#	#	#	#	
+7	#	#	#	.	#	#	#	#	#	#	
+8	#	#	#	.	#	#	#	#	#	#	
+9	#	>	.	.	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	moveForward
+	turnLeft
+	RepeatUntil(goal){
+		If(pathRight){
+			turnRight
+			moveForward
+		}
+		Else{
+			moveForward
+		}
+	}
+}
+
+--- Target Task 1: Student attempt ---
+The student attempt code for the reference task 1 has several misconceptions and errors.
+
+The student has not used any loops or conditionals, which are necessary to solve the task.
+The student has used the 'moveForward' and 'turnLeft' blocks repeatedly without any condition, which will make the avatar move in a straight line and not follow the maze's walls.
+The student has not checked for the goal condition, which is necessary to stop the program when the avatar reaches the goal.
+Based on the student's attempt code, it seems that they have not understood the concept of loops and conditionals in the context of the maze game. They also seem to be lacking an understanding of how to use the blocks provided to solve the task.
+
+For the target task 1, the student is likely to make similar mistakes as they did in the reference task. They may try to use the 'moveForward' and 'turnLeft' blocks repeatedly without any condition, which will not solve the task. They may also forget to check for the goal condition, which will make the program run indefinitely.
+
+A possible attempt code for the target task 1, based on the student's behavior and misconceptions, could be:
+
+def Run(){
+    moveForward
+    moveForward
+    moveForward
+    turnLeft
+    moveForward
+    turnLeft
+    moveForward
+    turnLeft
+    moveForward
+}
+This code will make the avatar move in a straight line and then turn left, without checking for any walls or the goal condition.

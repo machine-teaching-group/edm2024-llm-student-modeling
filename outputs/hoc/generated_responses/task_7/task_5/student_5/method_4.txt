@@ -1,0 +1,132 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	.	#	#	#	#	#	#	#	
+5	+	.	.	.	.	.	.	#	#	#	
+6	#	#	#	.	#	#	.	#	#	#	
+7	#	#	#	.	#	#	.	#	#	#	
+8	#	#	#	#	#	#	.	#	#	#	
+9	#	#	#	#	#	>	.	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnLeft
+		}
+	}
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	If(pathAhead){
+		moveForward
+	}
+	Else{
+		turnLeft
+	}
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	.	#	#	.	#	#	#	
+5	#	#	#	.	.	.	.	+	#	#	
+6	#	#	#	.	#	#	#	#	#	#	
+7	#	#	#	.	#	#	#	#	#	#	
+8	#	#	#	.	#	#	#	#	#	#	
+9	#	>	.	.	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	moveForward
+	turnLeft
+	RepeatUntil(goal){
+		If(pathRight){
+			turnRight
+			moveForward
+		}
+		Else{
+			moveForward
+		}
+	}
+}
+
+--- Target Task 1: Student attempt ---
+In the student's attempt for the reference task and given the new target task, it's clear that the student has some misconceptions about how to approach solving these maze challenges. Let's break down the misconceptions in both attempts:
+
+**Reference Task 1: Student attempt**
+```python
+def Run(){
+	moveForward
+	If(pathAhead){
+		moveForward
+	}
+	Else{
+		turnLeft
+	}
+}
+```
+
+Misconceptions:
+1. Lack of Loop: The student's attempt doesn't use any loop construct (`RepeatUntil`). In maze challenges, it's crucial to use loops to repeatedly check conditions while navigating the maze. Without a loop, the student's code will only execute once, which is insufficient for solving most maze challenges.
+
+2. Incorrect Conditional Placement: The student's code starts by moving forward unconditionally, without checking whether there's a path ahead (`pathAhead`). This can lead to the avatar moving into a wall or away from the goal without checking for obstacles.
+
+3. Missing Turn Right Condition: There is no consideration for turning right. The student's code only checks for the path ahead and turns left in case of an obstacle. In some situations, turning right might be necessary to find a clear path.
+
+Now, let's synthesize an attempt code for the new target task based on the student's behavior and misconceptions:
+
+**Target Task 1: Student attempt (Synthesized)**
+```python
+def Run(){
+	moveForward
+	moveForward
+	If(pathRight){
+		turnLeft
+	}
+	Else{
+		moveForward
+	}
+}
+```
+
+Misconceptions (based on the synthesized attempt):
+1. Lack of Loop: Similar to the reference task attempt, the student's code lacks a loop construct (`RepeatUntil`). This means the code will only execute a fixed set of instructions and won't adapt to different maze configurations.
+
+2. Missing Path Ahead Check: The student's code starts by moving forward twice unconditionally, without checking whether there's a path ahead (`pathAhead`). This can lead to the avatar crashing into walls.
+
+3. Inadequate Handling of Right Turns: The student's code checks for the condition `pathRight` but responds by turning left. This indicates a misunderstanding of how to handle right turns in the maze.
+
+Overall, the student in both the reference and synthesized attempts seems to struggle with the concept of using loops, conditional checks for all possible directions, and making appropriate decisions based on the maze's current state. They should focus on using loops to repeatedly check for paths and using conditional statements to navigate in the correct direction.

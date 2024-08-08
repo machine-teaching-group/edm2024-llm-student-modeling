@@ -1,0 +1,156 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	moveForward
+	turnLeft
+	turnRight
+	turnRight
+	turnLeft
+	moveForward
+	turnLeft
+	turnRight
+	turnRight
+	turnLeft
+	turnLeft
+	moveForward
+	turnLeft
+	turnRight
+	turnRight
+	turnRight
+	turnRight
+	turnRight
+	turnRight
+	moveForward
+	turnRight
+	moveForward
+	turnRight
+	turnLeft
+	turnLeft
+	moveForward
+	turnLeft
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	v	#	#	#	#	#	#	
+6	#	#	#	.	.	#	#	#	#	#	
+7	#	#	#	#	+	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+Based on the provided information, let's first analyze the student's behavior and misconceptions in the attempt code for the reference task (Reference Task 1).
+
+**Reference Task 1: Student attempt explanation:**
+The student's attempt code is significantly longer and more complex than the provided solution code. Here are some key observations and misconceptions in the student's attempt:
+
+1. **Repetitive Moves:** The student starts with multiple consecutive `moveForward` commands. This suggests a lack of understanding of the need for turning the avatar in the correct direction before moving. The student appears to believe that the avatar can move forward multiple times without any adjustments.
+
+2. **Excessive Turning:** The student uses a series of `turnLeft` and `turnRight` commands in rapid succession. This indicates confusion about the correct sequence of turns required to navigate the avatar to the goal. The student seems to think that repeatedly turning left and right will lead to the correct orientation.
+
+3. **Inefficient Path:** The student's attempt contains a long and inefficient path that meanders around the maze without reaching the goal efficiently. This suggests a lack of understanding of the concept of planning and following an optimal path to reach the goal.
+
+4. **Incorrect Turn Sequence:** The student often uses multiple consecutive turns in the same direction (e.g., `turnLeft`, `turnLeft`, `turnLeft`). This indicates confusion about how to properly adjust the avatar's orientation.
+
+Now, let's synthesize an attempt code for the new target task (Target Task 1) from the perspective of the same student, capturing their behavior and misconceptions:
+
+**Target Task 1: Student attempt (Synthesized):**
+```python
+def Run(){
+    # Initial confusion - attempting to move without turning
+    moveForward
+    moveForward
+    moveForward
+    moveForward
+    moveForward
+    moveForward
+    moveForward
+    moveForward
+    moveForward
+    moveForward
+    
+    # Confusion about turning - excessive turning in one direction
+    turnLeft
+    turnLeft
+    turnLeft
+    turnLeft
+    turnLeft
+    turnLeft
+    turnLeft
+    turnLeft
+    turnLeft
+    
+    # Attempt to move forward after excessive turning
+    moveForward
+    
+    # Realization of mistake - turning in the opposite direction
+    turnRight
+    
+    # Continuing in the wrong direction
+    moveForward
+    moveForward
+    
+    # Realization of the goal location
+    moveForward
+}
+```
+
+In this synthesized attempt code for the new target task, the same student's misconceptions are carried over from the previous attempt. They still struggle with turning correctly, moving efficiently, and planning a path to reach the goal. The code reflects their ongoing confusion and trial-and-error approach to solving the maze.

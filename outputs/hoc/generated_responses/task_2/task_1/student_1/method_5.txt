@@ -1,0 +1,126 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	#	#	#	#	#	#	
+6	#	#	v	#	#	#	#	#	#	#	
+7	+	#	.	#	#	#	#	#	#	#	
+8	.	.	.	#	#	#	#	#	#	#	
+9	.	#	.	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	moveForward
+	turnRight
+	moveForward
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+In the reference task, we have a 10x10 grid with the following symbols:
+
+'#' represents WALL cells.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+Let's analyze the student's behavior and misconceptions in their attempt code for the reference task:
+
+Reference Task 1: Student attempt
+
+python
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+}
+The student's code begins by moving the avatar forward. This is a good start as they correctly identified that the avatar needs to move to reach the goal.
+
+The next command is to turn the avatar left. This turn is not necessary in the context of the reference task because the avatar is initially facing east, and there is a clear path to the goal to the right (east) of the avatar's starting position.
+
+Finally, the student has the avatar move forward again. While this would take the avatar closer to the goal, the unnecessary left turn will cause it to move away from the goal.
+
+Misconceptions:
+
+The student seems to misunderstand the initial orientation of the avatar and unnecessarily makes a left turn when it is not needed.
+The student doesn't make use of the turnRight command to correct the avatar's orientation and move it towards the goal.
+Now, for the target task, where you need to synthesize an attempt code based on the student's behavior and misconceptions:
+
+Target Task 1: Student attempt (hypothetical)
+
+python
+def Run(){
+	moveForward
+	turnRight
+	moveForward
+	moveForward
+	turnLeft
+	moveForward
+}
+In this hypothetical attempt code, I am capturing the same student's behavior and misconceptions shown in the reference task:
+
+The student starts by moving the avatar forward, which is a good initial step.
+
+Next, they make a right turn, possibly thinking that the avatar needs to face a different direction. This is a misconception since the avatar's initial orientation is already correct.
+
+The student then moves the avatar forward three times, which is a correct decision and brings the avatar closer to the goal.
+
+Finally, they make a left turn, which is an unnecessary move and may take the avatar away from the goal, similar to their misconception in the reference task.
+
+This hypothetical attempt code reflects the same student's pattern of making unnecessary turns and not optimizing the path to the goal.

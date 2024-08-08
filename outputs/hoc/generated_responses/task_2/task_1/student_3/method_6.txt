@@ -1,0 +1,146 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	moveForward
+	turnLeft
+	turnRight
+	turnRight
+	turnLeft
+	moveForward
+	turnLeft
+	turnRight
+	turnRight
+	turnLeft
+	turnLeft
+	moveForward
+	turnLeft
+	turnRight
+	turnRight
+	turnRight
+	turnRight
+	turnRight
+	turnRight
+	moveForward
+	turnRight
+	moveForward
+	turnRight
+	turnLeft
+	turnLeft
+	moveForward
+	turnLeft
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	#	#	#	#	#	#	
+6	#	#	v	#	#	#	#	#	#	#	
+7	+	#	.	#	#	#	#	#	#	#	
+8	.	.	.	#	#	#	#	#	#	#	
+9	.	#	.	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	moveForward
+	turnRight
+	moveForward
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+The student attempt for the reference task 1 shows several misconceptions and misunderstandings. Here are some observations and explanations of the student's behavior:
+
+Inconsistent movement: The student uses both 'moveForward' and 'turnLeft'/'turnRight' commands to move the avatar. This indicates that the student may not fully understand how the game works or may have difficulty keeping track of the avatar's orientation.
+Lack of spatial awareness: The student's attempts to turn left and right suggest that they may not have a clear mental map of the grid and the avatar's position within it. For example, in one instance, the student turns left twice in a row, which would move the avatar further away from the goal instead of closer to it.
+Trial-and-error approach: The student seems to be using a trial-and-error approach, randomly turning left and right without any apparent strategy. This suggests that the student has not developed a systematic problem-solving approach and may be relying on luck rather than logic.
+Difficulty with pattern recognition: The student does not seem to recognize patterns in the grid, such as the fact that there are no obstacles (walls) in certain rows or columns. This lack of pattern recognition makes it difficult for the student to develop an effective plan to reach the goal.
+Now, let's synthesize an attempt code for the target task 1 that reflects the student's behavior and misconceptions observed in the reference task 1. Here's what the attempt code might look like:
+
+def Run(){
+moveForward
+moveForward
+turnRight
+turnLeft
+turnRight
+turnLeft
+moveForward
+turnRight
+turnLeft
+turnRight
+turnLeft
+moveForward
+turnLeft
+turnRight
+turnRight
+turnRight
+turnRight
+turnRight
+moveForward
+turnRight
+moveForward
+turnLeft
+turnLeft
+moveForward
+turnLeft
+turnRight
+moveForward
+}
+
+This attempt code exhibits similar behaviors and misconceptions as the student's attempt for the reference task 1. Here are some observations:
+
+Inconsistent movement: Like in the reference task, the student uses both 'moveForward' and 'turnLeft'/'turnRight' commands to move the avatar.
+Lack of spatial awareness: The student's use of 'turnLeft' and 'turnRight' commands without regard to the avatar's current orientation suggests that they still struggle with maintaining a mental map of the grid and the avatar's position within it.
+Trial-and-error approach: The student's random use of 'turnLeft' and 'turnRight' commands, often alternating between them without any discernible pattern, indicates that they are still relying on a trial-and-error approach rather than developing a systematic problem-solving strategy.
+Difficulty with pattern recognition: The student does not seem to recognize patterns in the grid, such as the open path to the goal in the bottom row. Instead, they continue to move the avatar randomly, hoping to stumble upon the goal.
+Overall, this attempt code reflects the student's persistent misconceptions and difficulties with spatial reasoning, problem-solving, and pattern recognition.

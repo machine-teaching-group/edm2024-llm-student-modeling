@@ -1,0 +1,108 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	turnRight
+	turnLeft
+	turnRight
+	moveForward
+	turnLeft
+	turnLeft
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	>	#	#	+	#	#	#	#	
+6	#	#	.	.	.	.	#	#	#	#	
+7	#	#	#	#	#	.	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	turnRight
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+	moveForward
+	turnLeft
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+The student does not seem to process that the turning actions in the game don't counteract each other. In the reference task, the student does unnecessary turns, for which there seems to be an intent to cancel out previous turns. Judging by the turning actions the student attempted to cancel - "turnRight and turnLeft" or two "turnLeft" to cancel one "turnRight" - the student likely misunderstood how the turns affect the Avatar's direction. They appear to think that turning right and then left would result in the Avatar facing the same direction as it was initially, which is not the case. Furthermore, the student seems to struggle with the notion of the Avatar's bearing in relation to its surroundings.
+
+Considering the student's understanding of their previous attempt, they might generate the following code for the target task:
+
+--- Target Task 1: Student attempt ---
+
+def Run(){
+    turnRight
+    moveForward
+    turnLeft
+    moveForward
+    turnRight
+    turnLeft
+    moveForward
+    turnLeft
+    turnLeft
+    turnRight
+    moveForward
+    turnLeft
+    turnLeft
+    turnRight
+    moveForward
+    turnRight
+    turnLeft
+    moveForward
+}
+This code contains extra turning actions similar to the student's previous attempt, as they likely believe they are needed to ensure the Avatar maintains the right direction. This misunderstanding leads to unnecessary code complexity and potential direction errors.

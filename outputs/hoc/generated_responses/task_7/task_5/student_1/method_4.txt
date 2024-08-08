@@ -1,0 +1,121 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	.	#	#	#	#	#	#	#	
+5	+	.	.	.	.	.	.	#	#	#	
+6	#	#	#	.	#	#	.	#	#	#	
+7	#	#	#	.	#	#	.	#	#	#	
+8	#	#	#	#	#	#	.	#	#	#	
+9	#	#	#	#	#	>	.	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnLeft
+		}
+	}
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathLeft){
+			turnLeft
+			moveForward
+		}
+		Else{
+			moveForward
+		}
+	}
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	.	#	#	.	#	#	#	
+5	#	#	#	.	.	.	.	+	#	#	
+6	#	#	#	.	#	#	#	#	#	#	
+7	#	#	#	.	#	#	#	#	#	#	
+8	#	#	#	.	#	#	#	#	#	#	
+9	#	>	.	.	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	moveForward
+	turnLeft
+	RepeatUntil(goal){
+		If(pathRight){
+			turnRight
+			moveForward
+		}
+		Else{
+			moveForward
+		}
+	}
+}
+
+--- Target Task 1: Student attempt ---
+Based on the provided reference task and the student's attempt at solving it, as well as the description of the available coding blocks, we can observe the following misconceptions and behavior of the student:
+
+**Misconception 1**: In the student's attempt for the reference task, they are using the condition `If(pathLeft)` to decide whether to turn left and then move forward or simply move forward. This suggests that the student thinks they need to turn left if there is a path to the left and move forward in all other cases.
+
+**Misconception 2**: The student's code does not account for the direction the avatar is facing. They assume that turning left and moving forward is the correct action without considering the avatar's orientation. This is evident from their attempt where they have the avatar initially facing East but don't adjust the movements accordingly.
+
+**Misconception 3**: The student does not use the `RepeatUntil` loop correctly. They have placed the condition `RepeatUntil(goal)` outside of the `If` statement, which means that the loop will continue until the goal is reached regardless of the avatar's position or direction.
+
+Now, for the target task, let's synthesize an attempt code that is likely to be written by the same student, capturing their behavior and misconceptions:
+
+```python
+def Run():
+    RepeatUntil(goal){
+        If(pathRight){
+            turnLeft  # Misconception: Turning left when there's a path to the right
+            moveForward  # Misconception: Moving forward without considering direction
+        }
+        Else{
+            moveForward  # Misconception: Assuming forward is always the correct direction
+        }
+    }
+}
+```
+
+In this synthesized attempt code for the target task, we see that the student is likely to repeat their previous misconceptions:
+
+1. They are still using `If(pathRight)` to decide whether to turn left and move forward, even though the goal and the layout of the maze have changed.
+
+2. They continue to assume that moving forward is the correct action in the "Else" branch without considering the avatar's orientation.
+
+3. They misuse the `RepeatUntil` loop in the same way as in the previous attempt, potentially leading to incorrect behavior in the new maze.
+
+Overall, the student seems to have a misunderstanding of how to make decisions based on the avatar's position, direction, and the layout of the maze, leading to incorrect solutions in both the reference and target tasks.

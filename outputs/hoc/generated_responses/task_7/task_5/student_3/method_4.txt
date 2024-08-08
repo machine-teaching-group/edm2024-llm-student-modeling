@@ -1,0 +1,130 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	.	#	#	#	#	#	#	#	
+5	+	.	.	.	.	.	.	#	#	#	
+6	#	#	#	.	#	#	.	#	#	#	
+7	#	#	#	.	#	#	.	#	#	#	
+8	#	#	#	#	#	#	.	#	#	#	
+9	#	#	#	#	#	>	.	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnLeft
+		}
+	}
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+	moveForward
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+	moveForward
+	moveForward
+	moveForward
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	.	#	#	.	#	#	#	
+5	#	#	#	.	.	.	.	+	#	#	
+6	#	#	#	.	#	#	#	#	#	#	
+7	#	#	#	.	#	#	#	#	#	#	
+8	#	#	#	.	#	#	#	#	#	#	
+9	#	>	.	.	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	moveForward
+	turnLeft
+	RepeatUntil(goal){
+		If(pathRight){
+			turnRight
+			moveForward
+		}
+		Else{
+			moveForward
+		}
+	}
+}
+
+--- Target Task 1: Student attempt ---
+Based on the provided reference task and solution, as well as the student's attempt on the reference task, we can observe the following behavior and misconceptions in the student's attempt:
+
+**Behavior and Misconceptions in the Student's Attempt on the Reference Task:**
+
+1. **Lack of Loop and Conditionals:** The student's attempt lacks the use of loops and conditionals, which are essential in solving maze challenges. In this case, the student should have used the `RepeatUntil(goal)` loop to repeatedly execute a set of instructions until the goal is reached. Instead, they have a series of `moveForward` and `turnLeft` commands without any decision-making.
+
+2. **No Sensing of Walls:** The student's code does not check for the presence of walls using the `pathAhead` condition before moving. They just blindly execute `moveForward` commands, which can lead to the avatar crashing into walls.
+
+3. **Inefficient Movement:** The student's code has an inefficient movement pattern where they repeatedly move forward and turn left, which does not guarantee reaching the goal. It lacks a clear strategy for navigating the maze.
+
+4. **Ignoring Goal Condition:** The student's code does not include any logic to check if the avatar has reached the goal using the `goal` condition. In a maze challenge, it's crucial to check if the goal has been reached to terminate the loop.
+
+Now, let's synthesize an attempt code for the new target task, imagining that the same student is attempting it. We'll try to capture their behavior and misconceptions:
+
+**Target Task 1: Student Attempt (Imagined):**
+
+```python
+def Run(){
+    moveForward
+    moveForward
+    moveForward
+    turnLeft
+    moveForward
+    moveForward
+    moveForward
+    turnLeft
+    moveForward
+    moveForward
+    turnLeft
+    moveForward
+    moveForward
+    moveForward
+    turnLeft
+    moveForward
+}
+```
+
+In this imagined student attempt for the new target task, we can see that the same misconceptions persist. The student continues to move forward blindly, turn left without considering the surroundings, and lacks a loop structure to navigate and make decisions based on conditions. This approach is unlikely to lead to a successful solution for the maze challenge.

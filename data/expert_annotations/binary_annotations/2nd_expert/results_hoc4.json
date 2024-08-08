@@ -1,0 +1,1412 @@
+{
+    "hoc4a":{
+        "stu1":{
+            "mis":"confusing left/right directions when turning",
+            "method_1":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_3":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_4":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_5":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_10":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_11":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        },
+        "stu2":{
+            "mis":"partially solving the task in terms of getting closer to the goal",
+            "method_1":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_3":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_4":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_5":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_6":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_7":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_11":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_12":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_13":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        },
+        "stu3":{
+            "mis":"misunderstanding of turning functionality and writing repetitive turn commands",
+            "method_1":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_2":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_3":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_4":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_5":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1 
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_10":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_11":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            }
+        },
+        "stu4":{
+            "mis":"adding more than the correct number of required move commands",
+            "method_1":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_3":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_4":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_5":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_11":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        },
+        "stu5":{
+            "mis":"forgetting to include some turns needed in the solution",
+            "method_1":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_3":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_4":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_5":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_11":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        },
+        "stu6":{
+            "mis":"attempting to randomly solve the task by adding lots of block_paths",
+            "method_1":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_3":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_4":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_5":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_6":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_10":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_11":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_13":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        }
+    },
+    "hoc4b":{
+        "stu1":{
+            "mis":"confusing left/right directions when turning",
+            "method_1":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_3":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_4":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_5":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_11":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        },
+        "stu2":{
+            "mis":"partially solving the task in terms of getting closer to the goal",
+            "method_1":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_3":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_4":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_5":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_11":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        },
+        "stu3":{
+            "mis":"misunderstanding of turning functionality and writing repetitive turn commands",
+            "method_1":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_2":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_3":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_4":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_5":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_10":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_11":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            }
+        },
+        "stu4":{
+            "mis":"adding more than the correct number of required move commands",
+            "method_1":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_3":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_4":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_5":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_11":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        },
+        "stu5":{
+            "mis":"forgetting to include some turns needed in the solution",
+            "method_1":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_3":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_4":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_5":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_11":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_14":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        },
+        "stu6":{
+            "mis":"attempting to randomly solve the task by adding lots of block_paths",
+            "method_1":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_3":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_4":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_5":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 0, 
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_11":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        }
+    },
+    "hoc4c":{
+        "stu1":{
+            "mis":"confusing left/right directions when turning",
+            "method_1":{
+                "stu_behavior": 0,
+                "task_characteristic": 0, 
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_3":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_4":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_5":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_11":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        },
+        "stu2":{
+            "mis":"partially solving the task in terms of getting closer to the goal",
+            "method_1":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_3":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_4":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_5":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_6":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_7":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_8":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_9":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_10":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_11":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            }
+        },
+        "stu3":{
+            "mis":"misunderstanding of turning functionality and writing repetitive turn commands",
+            "method_1":{
+                "stu_behavior": 0,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_3":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_4":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_5":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_11":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            }
+        },
+        "stu4":{
+            "mis":"adding more than the correct number of required move commands",
+            "method_1":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_3":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_4":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_5":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 1,
+                "task_characteristic": 0,
+                "both_stu_and_task": 0
+            },
+            "method_11":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        },
+        "stu5":{
+            "mis":"forgetting to include some turns needed in the solution",
+            "method_1":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_3":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_4":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_5":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_11":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            }
+        },
+        "stu6":{
+            "mis":"attempting to randomly solve the task by adding lots of block_paths",
+            "method_1":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_2":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_3":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_4":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_5":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_6":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            },
+            "method_7":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_8":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_9":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_10":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_11":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_12":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_13":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_14":{
+                "stu_behavior": 1,
+                "task_characteristic": 1,
+                "both_stu_and_task": 1
+            },
+            "method_15":{
+                "stu_behavior": 0,
+                "task_characteristic": 1,
+                "both_stu_and_task": 0
+            }
+        }
+    }
+}

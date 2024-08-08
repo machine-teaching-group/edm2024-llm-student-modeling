@@ -1,0 +1,123 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	.	#	#	#	#	#	#	#	
+5	+	.	.	.	.	.	.	#	#	#	
+6	#	#	#	.	#	#	.	#	#	#	
+7	#	#	#	.	#	#	.	#	#	#	
+8	#	#	#	#	#	#	.	#	#	#	
+9	#	#	#	#	#	>	.	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnLeft
+		}
+	}
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			turnLeft
+		}
+		Else{
+			turnLeft
+		}
+		moveForward
+	}
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	.	#	#	#	#	#	#	
+2	.	.	.	.	#	#	#	#	#	#	
+3	.	#	#	.	#	#	#	#	#	#	
+4	^	#	#	.	#	#	#	#	#	#	
+5	#	#	#	.	#	#	#	#	#	#	
+6	.	.	.	.	#	#	#	#	#	#	
+7	#	#	#	.	#	#	#	#	#	#	
+8	#	#	#	+	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnRight
+		}
+	}
+}
+
+--- Target Task 1: Student attempt ---
+Based on the reference and target tasks provided, I will analyze the student's behavior and misconceptions in the attempt code for the reference task, and then synthesize an attempt code that is likely to be written by the same student for the target task.
+Reference Task 1: Student attempt
+The student's attempt code for the reference task is as follows:
+def Run(){
+RepeatUntil(goal){
+If(pathAhead){
+turnLeft
+}
+Else{
+turnLeft
+}
+moveForward
+}
+}
+
+Analysis:
+The student's code is almost correct, but there are a few misconceptions and mistakes:
+
+The student is using the turnLeft block instead of turnRight when the AVATAR is facing East. This is a minor mistake, but it can lead to the AVATAR getting stuck in a corner.
+The student is using RepeatUntil(goal) instead of RepeatUntil(pathAhead). This is a more significant mistake, as it means that the code will repeat the movement until the AVATAR reaches the GOAL cell, regardless of whether there is a path to the GOAL or not.
+The student is using moveForward instead of moveRight when the AVATAR is facing East. This is a minor mistake that can also lead to the AVATAR getting stuck in a corner.
+Target Task 1: Student attempt
+Based on the student's attempt code for the reference task, I synthesize an attempt code that is likely to be written by the same student for the target task as follows:
+def Run(){
+RepeatUntil(goal){
+If(pathAhead){
+turnRight
+}
+Else{
+turnLeft
+}
+moveForward
+}
+}
+
+Explanation:
+The student's attempt code for the target task is similar to their code for the reference task, but with a few additional mistakes:
+
+The student is using turnRight instead of turnLeft when the AVATAR is facing West. This is a minor mistake that can lead to the AVATAR getting stuck in a corner.

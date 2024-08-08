@@ -1,0 +1,17 @@
+{
+    "method_1": "chatGPT-GPT-3.5",
+    "method_2": "GPT-4",
+    "method_3": "llama-2-7b-chat-fine-tuned-10-epochs-seed-0",
+    "method_4": "llama-2-7b-chat-fine-tuned-10-epochs-seed-1",
+    "method_5": "llama-2-7b-chat-fine-tuned-10-epochs-seed-2",
+    "method_6": "llama-2-7b-chat",
+    "method_7": "llama-2-70b-chat-fine-tuned-10-epochs-seed-0",
+    "method_8": "llama-2-70b-chat-fine-tuned-10-epochs-seed-1",
+    "method_9": "llama-2-70b-chat-fine-tuned-10-epochs-seed-2",
+    "method_10": "llama-2-70b-chat",
+    "method_11": "neurSS",
+    "method_12": "tutorSS_1",
+    "method_13": "tutorSS_2",
+    "method_14": "tutorSS_3",
+    "method_15": "GPT-3.5-turbo-0613-fine-tuned-2-epochs-seed-0"
+}

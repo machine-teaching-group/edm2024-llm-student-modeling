@@ -1,0 +1,110 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	>	#	#	+	#	#	#	#	
+6	#	#	.	.	.	.	#	#	#	#	
+7	#	#	#	#	#	.	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	turnRight
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+	moveForward
+	turnLeft
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+Based on the reference task and the student's attempt, let's analyze the student's behavior and misconceptions:
+
+**Reference Task 1: Student Attempt**
+```
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+}
+```
+
+1. **Missing Turn Right**: In the reference task, the solution code includes a `turnRight` command after the first `moveForward`, but the student's attempt does not. This suggests that the student has overlooked the need to turn right before moving forward again. In the reference task, the avatar initially faces East (">"), so turning right is necessary to align it with the path.
+
+2. **Excessive Movements**: The student's attempt includes two consecutive `moveForward` commands after turning left. This indicates a misconception about the position of the goal. In the reference task, the goal is not directly in front of the avatar after the initial movements; it's to the right. The student seems to have assumed that the goal is directly ahead and tried to move forward multiple times to reach it without properly aligning with it.
+
+3. **Failure to Adapt to the Maze**: The student's attempt does not adapt to the specific layout of the maze in the reference task. It appears that the student has a fixed sequence of movements (move forward, turn left, move forward) and did not consider the maze's structure or the avatar's initial orientation.
+
+Now, let's create an attempt code for the target task while considering the same student's behavior and misconceptions:
+
+**Target Task 1: Student Attempt (Simulating the Same Student)**
+```
+def Run(){
+	moveForward
+	turnRight   // Correcting the missing turnRight
+	moveForward
+	moveForward
+	// Assuming the goal is now directly ahead
+	moveForward
+	// Assuming the goal is reached without additional turns
+}
+```
+
+In this simulated attempt, we've corrected the missing `turnRight` based on the student's behavior in the reference task. However, the student still assumes that the goal is directly ahead after the initial movements, which may not be the case in the target task. The student does not adapt to the maze's layout and relies on a fixed sequence of movements.

@@ -1,0 +1,128 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/. 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	moveForward
+	turnLeft
+	turnRight
+	turnRight
+	turnLeft
+	moveForward
+	turnLeft
+	turnRight
+	turnRight
+	turnLeft
+	turnLeft
+	moveForward
+	turnLeft
+	turnRight
+	turnRight
+	turnRight
+	turnRight
+	turnRight
+	turnRight
+	moveForward
+	turnRight
+	moveForward
+	turnRight
+	turnLeft
+	turnLeft
+	moveForward
+	turnLeft
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	>	#	#	+	#	#	#	#	
+6	#	#	.	.	.	.	#	#	#	#	
+7	#	#	#	#	#	.	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	turnRight
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+	moveForward
+	turnLeft
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+def Run(){
+moveForward
+turnLeft
+turnRight
+moveForward
+moveForward
+turnLeft
+moveForward
+turnRight
+moveForward
+turnLeft
+moveForward
+turnRight
+moveForward
+turnLeft
+moveForward
+turnRight
+moveForward
+turnLeft
+moveForward
+}
+
+
+In this example, we can see that the student has attempted to solve the target task (Move Forward 3 times, Turn Left, Move Forward 2 times, Turn Right) but made several mistakes such as moving forward too many times or turning in the wrong direction. The teacher can use this information to identify where the student went wrong and provide personalized feedback to help them improve their understanding of the concept.
+
+It's also worth noting that the teacher can use the reference task and the student's attempt to create a customized exercise for the student to practice and reinforce their understanding of the concept. By comparing the student's attempt with the solution, the teacher can pinpoint the areas where the student needs more practice and create an exercise that targets those specific skills.

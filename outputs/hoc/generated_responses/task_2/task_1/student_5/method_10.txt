@@ -1,0 +1,93 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	#	#	#	#	#	#	
+6	#	#	v	#	#	#	#	#	#	#	
+7	+	#	.	#	#	#	#	#	#	#	
+8	.	.	.	#	#	#	#	#	#	#	
+9	.	#	.	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	moveForward
+	turnRight
+	moveForward
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+Sure, I'd be happy to help you with this!
+So, the reference task is a 10x10 maze, with walls, goal, and avatar. The solution code moves the avatar to the goal using the moveForward, turnLeft, and turnRight blocks. The student's attempt code also moves the avatar to the goal, but it uses the moveForward block twice, which is incorrect.
+Here's a breakdown of the student's behavior and misconceptions:
+
+The student correctly uses the moveForward block to move the avatar towards the goal, but they use it twice, which results in the avatar moving an extra cell.
+The student correctly turns the avatar left and right to avoid hitting the walls, but they don't use the turnLeft and turnRight blocks correctly. They use turnLeft and turnRight blocks instead of turnLeft and turnRight blocks, which is incorrect.
+The student correctly uses the RepeatUntil block to repeat the movement until the avatar reaches the goal, but they don't use it correctly. They use RepeatUntil block with a boolean condition that checks if the avatar has reached the goal, but they don't use the break statement to exit the loop when the avatar reaches the goal.
+Based on the student's behavior and misconceptions, I would predict that they are still learning the basics of visual programming and may have difficulty with more complex tasks that require more advanced concepts, such as nested loops and conditional statements.
+For the new target task, I would expect the student to make similar mistakes, such as using the wrong blocks or not using them correctly. Here's an attempt code that the student is likely to write for the new target task:
+def Run(){
+moveForward
+moveForward
+turnRight
+moveForward
+turnRight
+moveForward
+}
+In this attempt code, the student correctly uses the moveForward block to move the avatar towards the goal, but they use it twice again, which is incorrect. They also use the turnRight block twice, which is also incorrect. Additionally, they don't use the break statement to exit the `Repeat

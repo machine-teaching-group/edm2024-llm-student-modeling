@@ -1,0 +1,118 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	.	#	#	#	#	#	#	#	
+5	+	.	.	.	.	.	.	#	#	#	
+6	#	#	#	.	#	#	.	#	#	#	
+7	#	#	#	.	#	#	.	#	#	#	
+8	#	#	#	#	#	#	.	#	#	#	
+9	#	#	#	#	#	>	.	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnLeft
+		}
+	}
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	RepeatUntil(goal){
+		moveForward
+		turnLeft
+		moveForward
+		turnLeft
+		moveForward
+	}
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	.	#	#	#	#	#	#	
+2	.	.	.	.	#	#	#	#	#	#	
+3	.	#	#	.	#	#	#	#	#	#	
+4	^	#	#	.	#	#	#	#	#	#	
+5	#	#	#	.	#	#	#	#	#	#	
+6	.	.	.	.	#	#	#	#	#	#	
+7	#	#	#	.	#	#	#	#	#	#	
+8	#	#	#	+	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnRight
+		}
+	}
+}
+
+--- Target Task 1: Student attempt ---
+The student attempt for the reference task 1 is as follows:
+
+def Run(){
+	RepeatUntil(goal){
+		moveForward
+		turnLeft
+		moveForward
+		turnLeft
+		moveForward
+	}
+}
+
+The student's behavior and misconceptions in this attempt are:
+
+The student has not used any conditional statements to check for obstacles or the goal. They have simply used a repetition of moveForward and turnLeft commands to try and reach the goal.
+The student has not used the pathAhead or pathLeft Boolean conditions to check for obstacles or the goal. They have only used the goal condition to check if the avatar has reached the goal.
+The student has not used the turnRight command, which is necessary to navigate through the maze.
+Now, let's synthesize an attempt code for the target task 1 that captures the student's behavior and misconceptions:
+
+def Run(){
+	RepeatUntil(goal){
+		moveForward
+		turnLeft
+		moveForward
+		turnLeft
+		moveForward
+	}
+}
+
+This attempt code is likely to be written by the same student who wrote the reference task 1 attempt code. The student has repeated the same pattern of moveForward and turnLeft commands, without using any conditional statements or checking for obstacles. They have also not used the turnRight command, which is necessary to navigate through the maze.
+
+The student's misconceptions in this attempt are:
+
+The student has not understood the importance of using conditional statements to check for obstacles and the goal.
+The student has not understood the need to use the turnRight command to navigate through the maze.
+The student has not learned from their previous mistakes in the reference task 1 attempt code.

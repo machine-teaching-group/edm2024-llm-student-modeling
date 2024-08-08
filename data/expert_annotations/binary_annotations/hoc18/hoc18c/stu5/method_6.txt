@@ -1,0 +1,119 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	.	#	#	#	#	#	#	#	
+5	+	.	.	.	.	.	.	#	#	#	
+6	#	#	#	.	#	#	.	#	#	#	
+7	#	#	#	.	#	#	.	#	#	#	
+8	#	#	#	#	#	#	.	#	#	#	
+9	#	#	#	#	#	>	.	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnLeft
+		}
+	}
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	If(pathAhead){
+		moveForward
+	}
+	Else{
+		turnLeft
+	}
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	.	#	#	#	#	#	#	
+4	#	#	#	.	#	#	#	#	#	#	
+5	#	#	#	.	#	#	#	#	#	#	
+6	.	.	.	.	.	.	#	#	#	#	
+7	#	.	#	#	#	.	#	#	#	#	
+8	#	.	#	+	#	.	#	#	#	#	
+9	#	.	.	.	#	^	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathLeft){
+			turnLeft
+			moveForward
+		}
+		Else{
+			moveForward
+		}
+	}
+}
+
+--- Target Task 1: Student attempt ---
+Great! Let's dive into the task and provide explanations and suggestions for the student's attempt code.
+Reference Task 1:
+The reference task is a classic maze challenge where the goal is to move the avatar from the starting position to the goal position. The student's attempt code is shown below:
+def Run(){
+moveForward
+If(pathAhead){
+moveForward
+}
+Else{
+turnLeft
+}
+}
+
+Our observations and suggestions:
+
+The student's code uses the moveForward block without checking the condition pathAhead. This can cause the avatar to move forward even when there is no path ahead, resulting in a crash.
+The student's code uses the turnLeft block without checking the condition pathLeft. This can cause the avatar to turn left even when there is no path left, resulting in a crash.
+The student's code does not use the RepeatUntil block to repeat the action until the goal is reached. This means that the avatar will move forward only once and will not repeat the action until the goal is reached.
+Target Task 1:
+The target task is similar to the reference task, but with a slight modification to the grid. The student's attempt code is shown below:
+def Run(){
+moveForward
+If(pathLeft){
+turnLeft
+moveForward
+
+}
+}
+
+Our observations and suggestions:
+
+The student's code does not check the condition pathLeft before turning left. This can cause the avatar to turn left even when there is no path left, resulting in a crash.
+The student's code does not use the RepeatUntil block to repeat the action until the goal is reached. This means that the avatar will move forward only once and will not repeat the action until the goal is reached.
+The student's code does not use the moveForward block to move the avatar forward after turning left. This can cause the avatar to move forward only after turning left, resulting in a longer path to the goal.
+To improve the student's attempt code, we suggest the following changes:
+Reference Task 1:

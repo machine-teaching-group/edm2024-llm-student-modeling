@@ -1,0 +1,99 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	turnRight
+	turnLeft
+	turnRight
+	moveForward
+	turnLeft
+	turnLeft
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	>	#	#	+	#	#	#	#	
+6	#	#	.	.	.	.	#	#	#	#	
+7	#	#	#	#	#	.	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	turnRight
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+	moveForward
+	turnLeft
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+Sure, I'd be happy to help you with this!
+So, based on the reference task and the student's attempt code, it seems that the student is having trouble understanding the concept of moving the avatar to the goal. Here are some possible misconceptions:
+
+The student may be thinking that the avatar can move through walls, which is not the case in this domain. The avatar can only move between free cells, and will crash if it tries to move into a wall cell.
+The student may be misunderstanding the turn Right and turn Left blocks. In this domain, these blocks only work when the avatar is facing the corresponding direction. For example, if the avatar is facing East, the turn Right block will move the avatar to the right, but if the avatar is facing West, the turn Right block will not work.
+The student may be forgetting to use the moveForward block to move the avatar to the goal. In this domain, the moveForward block is required to move the avatar to the goal, as the avatar cannot move to the goal directly.
+Based on these misconceptions, I would predict that the student's attempt code will have the following errors:
+The student may be trying to move the avatar through walls, which will cause the code to crash.
+The student may be using the turn Right and turn Left blocks incorrectly, which will cause the avatar to move in the wrong direction.
+The student may be forgetting to use the moveForward block to move the avatar to the goal, which will cause the code to fail.
+Here is an attempt code that captures these misconceptions and errors:
+def Run(){
+	turnRight
+	moveForward
+	turnLeft
+	moveForward
+}
+In this code, the student is trying to move the avatar right by using the turnRight block, but they are forgetting to use the moveForward block to move the avatar to the goal. They are also trying to move the avatar left by using the turnLeft block, but they are not using the moveForward block to move the avatar to the goal. Finally, they are trying to move the avatar forward by using the moveForward block, but they are forgetting to use the turnRight block to move the avatar in the correct direction

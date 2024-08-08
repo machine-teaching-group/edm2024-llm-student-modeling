@@ -1,0 +1,105 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	turnRight
+	turnLeft
+	turnRight
+	moveForward
+	turnLeft
+	turnLeft
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	v	#	#	#	#	#	#	
+6	#	#	#	.	.	#	#	#	#	#	
+7	#	#	#	#	+	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+In the reference task, the student's attempt code demonstrates some misconceptions and mistakes in understanding how to solve the maze challenge:
+
+1. **Inefficient Movements:** The student starts by moving forward but then makes multiple unnecessary turns in different directions before finally moving forward again. These extra turns are not required to reach the goal and only waste steps.
+
+2. **Lack of Consistency:** The student seems to be making random turns without a clear plan. This indicates a lack of understanding of how to navigate the maze efficiently.
+
+3. **No Conditionals or Loop:** The student doesn't use any conditional blocks or loops to make decisions based on the conditions of the maze (e.g., checking if there's a path ahead or if the goal is reached). Instead, they rely solely on hard-coded movements, which is not a scalable or efficient approach.
+
+Now, for the new target task, let's synthesize an attempt code from the same student, considering their previous misconceptions:
+
+--- Target Task 1: Student attempt ---
+
+```python
+def Run(){
+    moveForward
+    turnLeft
+    moveForward
+    turnRight
+    moveForward
+    turnRight
+    moveForward
+    turnRight
+    moveForward
+}
+```
+
+In this attempt code, the student appears to repeat the same pattern of inefficient movements seen in the reference task. They start by moving forward and then make a series of unnecessary turns before finally moving forward again. This shows a lack of improvement in their understanding of how to navigate the maze efficiently and suggests that they are still struggling with the basic concepts of pathfinding. Additionally, there are no conditionals or loops used to make decisions based on the maze's conditions, indicating a continued misunderstanding of how to approach the problem systematically.

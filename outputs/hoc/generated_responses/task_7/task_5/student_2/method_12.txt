@@ -1,0 +1,116 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	.	#	#	#	#	#	#	#	
+5	+	.	.	.	.	.	.	#	#	#	
+6	#	#	#	.	#	#	.	#	#	#	
+7	#	#	#	.	#	#	.	#	#	#	
+8	#	#	#	#	#	#	.	#	#	#	
+9	#	#	#	#	#	>	.	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnLeft
+		}
+	}
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	RepeatUntil(goal){
+		If(pathAhead){
+			moveForward
+		}
+		Else{
+			turnRight
+		}
+	}
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	.	#	#	.	#	#	#	
+5	#	#	#	.	.	.	.	+	#	#	
+6	#	#	#	.	#	#	#	#	#	#	
+7	#	#	#	.	#	#	#	#	#	#	
+8	#	#	#	.	#	#	#	#	#	#	
+9	#	>	.	.	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	moveForward
+	moveForward
+	turnLeft
+	RepeatUntil(goal){
+		If(pathRight){
+			turnRight
+			moveForward
+		}
+		Else{
+			moveForward
+		}
+	}
+}
+
+--- Target Task 1: Student attempt ---
+The student attempt code for the reference task 1 has a misconception. The student has used turnRight instead of turnLeft in the Else branch of the If statement. This will make the avatar turn right instead of left when there is no path ahead, which will not help the avatar reach the goal.
+
+The student attempt code for the target task 1 is similar to the reference task 1, but with a different grid layout. The student has used moveForward twice at the beginning, which is not necessary and will not help the avatar reach the goal. The student has also used turnLeft in the If statement, which is correct, but the condition pathRight is not correct. The avatar will turn left even if there is a wall on the right side, which will make it crash.
+
+To synthesize an attempt code that is likely to be written by the same student for the target task 1, we can keep the same structure as the student attempt code for the reference task 1, but with the modifications that are specific to the target task 1. Here's an attempt code that is likely to be written by the student:
+
+
+
+
+def Run(){
+  moveForward
+  moveForward
+  If(pathAhead){
+    turnLeft
+  }
+  Else{
+    turnRight
+  }
+  RepeatUntil(goal){
+    If(pathRight){
+      turnRight
+      moveForward
+    }
+    Else{
+      moveForward
+    }
+  }
+}
+This attempt code has the same misconceptions as the student attempt code for the reference task 1. The student has used turnRight instead of turnLeft in the Else branch of the If statement, which will make the avatar turn right instead of left when there is no path ahead, and will not help the avatar reach the goal. Additionally, the student has used pathRight in the If statement, which is not correct, and will make the avatar turn right even if there is a wall on the right side, which will make it crash.

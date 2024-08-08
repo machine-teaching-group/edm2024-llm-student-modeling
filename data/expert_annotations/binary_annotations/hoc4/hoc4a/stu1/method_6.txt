@@ -1,0 +1,120 @@
+You are working on the visual programming domain Classic Maze Challenge from https://code.org/ 
+In this domain, the following types of coding blocks are available.
+- Basic navigation blocks: moveForward, turnLeft, turnRight.
+- Boolean conditions: pathAhead, pathLeft, pathRight, goal
+- Loops: RepeatUntil(boolean){}
+- Conditionals: If(boolean){}, If(boolean){}Else{}.
+
+A task is represented as a 10x10 visual grid.
+This grid contains WALL cells, FREE cells, a GOAL cell, and an AVATAR (with specific location and direction).
+We represent a task's 10x10 visual grid with the following symbols.
+'#' represents a WALL cell.
+'+' represents the GOAL cell.
+'>' represents AVATAR's location on a cell, facing East direction.
+'<' represents AVATAR's location on a cell, facing West direction.
+'^' represents AVATAR's location on a cell, facing North direction.
+'v' represents AVATAR's location on a cell, facing South direction.
+A solution code for a task brings the AVATAR to the GOAL when executed. Note that the AVATAR can only move between FREE cells and will crash if it tries to go to a WALL cell.
+
+First, I give you below a reference task, its solution code, and an attempt code from a student on the reference task. Observe and explain the student's behavior and misconceptions in the attempt code.
+
+Second, I give you a new target task with its solution code. You are going to play the role of the given student. Synthesize an attempt code that is likely to be written by the same student, i.e capturing the student's behavior and misconceptions shown on the reference task.
+
+--- Reference Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	#	#	.	+	#	#	#	#	
+6	#	#	#	>	.	#	#	#	#	#	
+7	#	#	#	#	#	#	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Reference Task 1: Solution ---
+def Run(){
+	moveForward
+	turnLeft
+	moveForward
+	turnRight
+	moveForward
+}
+
+--- Reference Task 1: Student attempt ---
+def Run(){
+	moveForward
+	turnRight
+	moveForward
+	turnLeft
+	moveForward
+}
+
+--- Target Task 1: Grid ---
+1	#	#	#	#	#	#	#	#	#	#	
+2	#	#	#	#	#	#	#	#	#	#	
+3	#	#	#	#	#	#	#	#	#	#	
+4	#	#	#	#	#	#	#	#	#	#	
+5	#	#	>	#	#	+	#	#	#	#	
+6	#	#	.	.	.	.	#	#	#	#	
+7	#	#	#	#	#	.	#	#	#	#	
+8	#	#	#	#	#	#	#	#	#	#	
+9	#	#	#	#	#	#	#	#	#	#	
+10	#	#	#	#	#	#	#	#	#	#	
+
+--- Target Task 1: Solution ---
+def Run(){
+	turnRight
+	moveForward
+	turnLeft
+	moveForward
+	moveForward
+	moveForward
+	turnLeft
+	moveForward
+}
+
+--- Target Task 1: Student attempt ---
+
+Great, let's dive into the tasks and analyze the student's attempt code for Task 1.
+--- Reference Task 1: Solution ---
+The solution code for Task 1 is as follows:
+def Run(){
+        moveForward
+        turnLeft
+        moveForward
+        turnRight
+        moveForward
+}
+--- Reference Task 1: Student attempt ---
+The student's attempt code for Task 1 is as follows:
+def Run(){
+        moveForward
+        turnRight
+        moveForward
+        turnLeft
+        moveForward
+}
+Now, let's analyze the student's code and identify the misconceptions:
+
+Incorrect use of moveForward and moveBackward blocks: The student uses moveForward and moveBackward blocks incorrectly. They should be used to move the avatar forward or backward, respectively, but the student is using them to move the avatar to the right or left.
+Incorrect use of turnLeft and turnRight blocks: The student uses turnLeft and turnRight blocks incorrectly. They should be used to turn the avatar left or right, respectively, but the student is using them to move the avatar to the left or right.
+Lack of use of RepeatUntil block: The student's code does not use the RepeatUntil block correctly. The RepeatUntil block should be used to repeat the code inside it until a certain condition is met, but the student is not using it correctly.
+--- Target Task 1: Grid ---
+The target task is similar to the reference task, but with a different grid layout. The solution code for the target task is as follows:
+def Run(){
+        turnRight
+        moveForward
+        turnLeft
+        moveForward
+}
+--- Target Task 1: Student attempt ---
+The student's attempt code for the target task is as follows:
+def Run(){
+        moveForward
+        turnRight
+        moveForward
+        turnLeft
+        moveForward
+}
+Now, let's analyze the student's code and identify the miscon
